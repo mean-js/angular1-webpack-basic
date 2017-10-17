@@ -12,6 +12,15 @@
 
 <body>
     Hello
+
+    <div ng-controller="ControllerFirst as first">
+        {{first.data.title}}
+        <br> {{first.data.ts | date:'dd MMM yyyy HH:mm:ss'}}
+
+        <br> {{first.data.nickName}}
+        <br>
+        <div ng-click="first.clickme()">CLICK ME</div>
+    </div>
 </body>
 
 </html>
